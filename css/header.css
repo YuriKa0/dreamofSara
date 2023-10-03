@@ -1,0 +1,80 @@
+/* header{
+  position:fixed; z-index:99999;
+  display:flex; justify-content:space-between;
+  align-items: center ;
+  padding:0 175px;
+  width:100%; height:80px; box-sizing:border-box;
+  background:#FBE8A4;
+  box-shadow:0 4px 4px rgba(255,206,170,0.25);
+}
+header .logo a{
+  display:block; width:157px; height:57px;
+  background:url('../img/logo.png') no-repeat left top;
+  background-size:100%;
+  text-indent:-9999em;
+}
+header .gnb{
+  display:flex;
+}
+header .gnb a{
+  display:block; height:80px;
+  padding:0 40px; line-height:80px;
+  font-size:1.5rem; font-weight:700;
+  color:#B95397;
+}
+header .gnb a:hover{
+  background:#FFCF87;
+}
+header .btn_top{
+  display:none;
+} */
+
+/* 스크롤 이벤트 */
+header{
+  position:fixed; z-index:9999; right:140px; top:40px;
+  /* width:auto; height:auto;  */
+  /* box-sizing:border-box; */
+  padding:10px;
+}
+header .logo{
+  position:fixed; left:50px; 
+}
+header .logo a{
+  display:block; width:130px; height:57px;
+  background:url('../img/logo.png') no-repeat left top;
+  background-size:contain;
+  text-indent:-9999em;
+}
+header .gnb{
+  display:flex; flex-direction:column;
+  gap:20px; margin-bottom:50px;
+}
+header .gnb a{
+  font-size:1.5rem; font-weight:600;
+  color:rgba(0,0,0, 0.6);
+  transition:color .3s;
+}
+header .gnb a:hover{
+  color:rgba(185, 83, 151, 1);
+}
+
+@keyframes toTop{
+  0%{
+    transform:translateY(0px);
+  }
+  50%{
+    transform:translateY(-15px);
+  }
+  100%{
+    transform:translateY(0px);
+  }
+}
+header .btn_top{
+  display:block; width:65px; height:56px;
+  background:url('../img/toTop18.png') no-repeat center top;
+  background-size:contain; text-indent:-9999em;
+  cursor:pointer;
+}
+header .btn_top:hover{
+  animation:toTop .3s both;
+}

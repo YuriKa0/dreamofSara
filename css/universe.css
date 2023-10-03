@@ -1,0 +1,80 @@
+@import 'global.css';
+
+@keyframes expand{
+  0%{ scale:0.95;}
+  100%{ scale:1; }
+}
+header .gnb .toUniverse{
+  color:rgba(185, 83, 151);
+}
+
+section:first-of-type{
+  padding-top:0px;
+}
+section:first-of-type h2{
+  padding-top:180px;
+}
+.story{
+  position:relative;
+  margin-bottom:75px; padding:0;
+  width:100%; height:1747px;
+}
+.story .story_bg.scrollEnd{
+  position:absolute; 
+  bottom:0; top:unset;
+}
+.story .story_bg{
+  position:fixed; top:0; bottom:unset;
+  width:100%;height:1080px;
+  background:url('../img/story_bg.png') no-repeat center top;
+  background-size: 1920px auto;
+}
+.story .content_wrap{
+  position:relative; z-index:3;
+}
+.story h2{
+  color:#fff; 
+}
+.story .text_wrap{
+  display:flex; flex-direction:column;
+  gap:60px;
+}
+.story p{
+  color:#fff;
+  font-size:1.5rem; font-weight:500;
+  text-align:center;
+  text-shadow: 0 0 9px #D68041;
+}
+.story p span{
+  font-size:2rem;
+}
+.story .story_img{
+  position:absolute; left:50%;bottom:-75px;
+  transform:translateX(-50%);
+}
+
+
+.setting .setting_wrap{
+  gap:200px; 
+}
+.setting .set_wrap img{
+  opacity:0;
+}
+.setting .set_wrap.on img{
+  animation:fadeIn .4s ease-out both, expand .4s ease-out both;
+}
+.setting .set_wrap .textbox{
+  opacity:0;
+}
+.setting .set_wrap.on .textbox{
+  animation:fadeIn .5s .4s both;
+}
+.setting .set_wrap h3{
+  margin-bottom:28px; padding-left:61px; 
+  height:58px; line-height:58px;
+  background:url('../img/icon_keyword.png') no-repeat left top;
+  font-size:2.25rem;
+}
+.setting .set_wrap p{
+  color:#6F0B35;
+}
