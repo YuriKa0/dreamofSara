@@ -1,8 +1,8 @@
 @import 'global.css';
 
 @keyframes expand{
-  0%{ scale:0.95;}
-  100%{ scale:1; }
+  0%{ transform:scale(0.95);}
+  100%{ transform:scale(1); }
 }
 header .gnb .toUniverse{
   color:rgba(185, 83, 151);

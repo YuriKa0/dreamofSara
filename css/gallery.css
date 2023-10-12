@@ -46,7 +46,7 @@ header .gnb .toGallery{
   display:none;
 }
 .illust .thumnail:hover img{
-  scale:1.03;
+  transform:scale(1.03);
 }
 
 .illust .illust_popup{
